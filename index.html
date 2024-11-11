@@ -176,9 +176,13 @@
 	<script src="js/CSS3DRenderer.js"></script>
 
 	<div id="container"></div>
-	<audio autoplay="autoplay" loop="loop" id="audios" preload="auto" playsinline>
+	<audio autoplay muted loop id="audios" preload="auto">
     <source src="MP3/1.mp3" type="audio/mpeg" />
 </audio>
+<script>
+    var audio = document.getElementById("audios");
+    audio.muted = false;
+</script>
 
 	<div id="menu">
 		<button id="table">表格</button>
